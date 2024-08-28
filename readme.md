@@ -133,3 +133,5 @@ No need to use `SELECT`: just go for `FROM` straight away!
 16. ```sql
         .exit
         ```
+
+17. for running tests: pytest

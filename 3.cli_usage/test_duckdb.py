@@ -26,7 +26,7 @@ def test_customer_email_format():
     for email, in results:
         assert '@' in email, "Incorrect format"
 
-def test_unique_cistomer_ids():
+def test_unique_customer_ids():
     con = connect_to_db()
     query = "SELECT COUNT(DISTINCT CustomerId) FROM customers;"
     distinct_count = con.execute(query).fetchone()[0]
